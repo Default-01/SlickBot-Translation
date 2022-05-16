@@ -138,6 +138,7 @@
                 "embedFooter": "SlickBot Configuration",
                 "selectCategory": "Select a category below to edit:",
                 "selectOption": "(Select a option below to update)",
+                "returnFooter": "Type \"return\" to return to the main menu.",
                 "timedOut": "I did not recieve a response in time, Please use `/settings` again to continue.",
                 "settings": "Settings",
                 "return": "Return",
