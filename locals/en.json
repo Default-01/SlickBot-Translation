@@ -140,7 +140,9 @@
                 "timedOut": "This command has timed out, use `/patreon` again to continue.",
                 "updatedPremium": "Successfully updated premium servers.",
                 "serverSelect": "`Select a server to enable/disable premium.`",
-                "servers": "ID: `{id}`\nPremium: {premium}\nMemberCount: `{count}`"
+                "servers": "ID: `{id}`\nPremium: {premium}\nMemberCount: `{count}`",
+                "serverNotFound": "The specified server ID is not found.",
+                "slectServer": "Type the server ID below to enable premium."
             },
             "language": {},
             "moderation": {},
