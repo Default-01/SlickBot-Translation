@@ -147,7 +147,10 @@
                 "optionEmbedTitle": "⚙️ Update {option}",
                 "optionUpdated": "**{option}** is updated to **{value}**",
                 "mentionRoles": "Mention the role(s) you wanna update below.",
-                "rolesUpdated": "Updated {roles} for {option}"
+                "rolesUpdated": "Updated {roles} for {option}",
+                "enabled": "Enabled",
+                "disabled": "Disabled",
+                "notSet": "Not set"
             },
             "premium": {
                 "embedTitle": "💎 SlickBot | Premium",
@@ -181,7 +184,25 @@
             "suggestions": {
                 "name": "Suggestions",
                 "title": "💡 Suggestion Settings",
-                "description": "Change the suggestions settings."
+                "description": "Change the suggestions settings.",
+                "optionEmojisName": "Emojis",
+                "optionDoubleVoteName": "Double Voting",
+                "optionSelfVoteName": "Self Voting",
+                "optionModRoleName": "Suggest Mod Role",
+                "optionModChannelName": "Mod Channel",
+                "optionSuggestChannelName": "Suggest Channels",
+                "optionAddSuggestChannelName": "Add Suggestion Channel",
+                "optionAddSuggestChannelDesc": "Add a suggestion channel.",
+                "optionRemSuggestChannelName": "Remove Suggestion Channel",
+                "optionRemSuggestChannelDesc": "Remove a suggestion channel.",
+                "optionSetSuggestModName": "Set Mod Role",
+                "optionSetSuggestModDesc": "Set a Suggest Mod role.",
+                "optionToggleDoubleVoteName": "Toggle Double Votes",
+                "optionToggleDoubleVoteDesc": "Toggle wether members can vote on multiple options or just one.",
+                "optionToggleSelfVoteName": "Toggle Self Voting",
+                "optionToggleSelfVoteDesc": "Toggle wether the author of a suggestion can vote on their own suggestion.",
+                "optionSetModChannelName": "Set Mod Channel",
+                "optionSetModChannelDesc": "Set a Suggest Mod channel to enable staff moderation."
             }
         }
     }
