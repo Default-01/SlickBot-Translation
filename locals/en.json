@@ -151,6 +151,9 @@
                 "rolesUpdated": "Updated {roles} for {option}",
                 "channelsUpdated": "Updated {channels} for {option}",
                 "channelsRemoved": "Successfully removed channel(s) from {option}.",
+                "toggleOption": "Choose below wether you wanna enable or disable {option}.",
+                "toggleEnabled": "You have enabled {option}",
+                "toggleDisabled": "You have disabled {option}",
                 "enabled": "Enabled",
                 "disabled": "Disabled",
                 "notSet": "Not set"
