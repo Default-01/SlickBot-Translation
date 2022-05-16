@@ -147,7 +147,10 @@
                 "optionEmbedTitle": "⚙️ Update {option}",
                 "optionUpdated": "**{option}** is updated to **{value}**",
                 "mentionRoles": "Mention the role(s) you wanna update below.",
+                "mentionChannels": "Mention the channel(s) below. (type \"skip\" to make empty)",
                 "rolesUpdated": "Updated {roles} for {option}",
+                "channelsUpdated": "Updated {channels} for {option}",
+                "channelsRemoved": "Successfully removed channel(s) from {option}.",
                 "enabled": "Enabled",
                 "disabled": "Disabled",
                 "notSet": "Not set"
