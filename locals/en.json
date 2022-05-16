@@ -144,7 +144,9 @@
                 "returnDescription": "Select this option to return to the main menu.",
                 "optionDescription": "Select an option below to update this setting.",
                 "optionEmbedTitle": "⚙️ Update {option}",
-                "optionUpdated": "{option} is updated to {value}"
+                "optionUpdated": "**{option}** is updated to **{value}**",
+                "mentionRoles": "Mention the role(s) you wanna update below.",
+                "rolesUpdated": "Updated {roles} for {option}"
             },
             "premium": {
                 "embedTitle": "💎 SlickBot | Premium",
@@ -168,7 +170,12 @@
             "moderation": {
                 "name": "Moderation",
                 "title": "🛡️ Moderation Settings",
-                "description": "Change the moderation settings."
+                "description": "Change the moderation settings.",
+                "optionStaffName": "Staff Roles",
+                "optionAddStaffRoleName": "Add Staff Roles",
+                "optionAddStaffRoleDesc": "Select this option to add a staff role.",
+                "optionRemStaffRoleName": "Remove Staff Roles",
+                "optionRemStaffRoleDesc": "Select this option to remove a staff role."
             },
             "suggestions": {
                 "name": "Suggestions",
