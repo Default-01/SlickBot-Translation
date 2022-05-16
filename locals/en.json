@@ -133,6 +133,19 @@
             "announce": {}
         },
         "configuration": {
+            "general": {
+                "embedTitle": "⚙️ SlickBot | Configuration",
+                "embedFooter": "SlickBot Configuration",
+                "selectCategory": "Select a category below to edit:",
+                "selectOption": "(Select a option below to update)",
+                "timedOut": "I did not recieve a response in time, Please use `/settings` again to continue.",
+                "settings": "Settings",
+                "return": "Return",
+                "returnDescription": "Select this option to return to the main menu.",
+                "optionDescription": "Select an option below to update this setting.",
+                "optionEmbedTitle": "⚙️ Update {option}",
+                "optionUpdated": "{option} is updated to {value}"
+            },
             "premium": {
                 "embedTitle": "💎 SlickBot | Premium",
                 "embedFooter": "SlickBot Premium",
@@ -145,9 +158,23 @@
                 "serverNotFound": "The specified server ID is not found.",
                 "slectServer": "Type the server ID below to enable premium."
             },
-            "language": {},
-            "moderation": {},
-            "suggestions": {}
+            "language": {
+                "name": "Language",
+                "title": "🌐 Language Settings",
+                "description": "Change the bot's language settings here.",
+                "updateLangName": "Update language",
+                "updateLangDescription": "Select this option to update the bot language."
+            },
+            "moderation": {
+                "name": "Moderation",
+                "title": "🛡️ Moderation Settings",
+                "description": "Change the moderation settings."
+            },
+            "suggestions": {
+                "name": "Suggestions",
+                "title": "💡 Suggestion Settings",
+                "description": "Change the suggestions settings."
+            }
         }
     }
 }
