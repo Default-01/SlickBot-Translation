@@ -127,7 +127,45 @@
                     "deletedEmbedFooter": "Deleted by {user}"
                 }
             },
-            "suggestions": {},
+            "suggestions": {
+                "general": {
+                    "suggestion": "Suggestion",
+                    "embedFooter": "SlickBot Suggestions",
+                    "approve": "Approve",
+                    "reject": "Reject"
+                },
+                "create": {
+                    "wrongChannel": "You must send a suggestion in a suggestion channel like {channels}",
+                    "noChannels": "`There are no suggestion channels available`",
+                    "suggestionCreated": "✅ Your suggestion is sent to the suggestion moderators, once approved it will be shown in this channel.",
+                    "newSuggestionModEmbedTitle": "New Suggestion",
+                    "newSuggestionModEmbedDescription": "**Member:** {user}\n**Suggestion:** {suggestion}\n**Status:** Moderation",
+                    "newSuggestionEmbedDescription": "**Suggestion:** {suggestion}\n**Status:** Pending"
+                },
+                "moderation": {
+                    "approvedEmbedTitle": "Approved Suggestion",
+                    "approvedDescription": "Suggestion is approved by {user}!\n\n**Channel:** {channel}\n**Status:** `Pending`\n**Suggestion:** {suggestion}",
+                    "approvedDmEmbedTitle": "Suggestion Passed Moderation",
+                    "approvedDmEmbedDescription": "Your [suggestion]({link}) passed the moderation!\n\n**Status:** `Pending`\n**Suggestion:** {suggestion}",
+                    "approvedSuggestionDescription": "**Suggestion:** {suggestion}\n**Status:** `Approved`",
+                    "approvedDmSuggestionDescription": "Your [suggestion]({link}) is approved!\n\n**Status:** `Approved`\n**Suggestion:** {suggestion}",
+                    "rejectedEmbedTitle": "Rejected Suggestion",
+                    "rejectedEmbedDescription": "Suggestion is rejected and removed.\n\n**Suggestion:** {suggestion}\n**Moderator:** {user}\n**Reason:** {reason}}",
+                    "rejectedDmEmbedTitle": "Suggestion Failed Moderation",
+                    "rejectedDmEmbedDescription": "Your suggestion did not pass the moderation!\n\n**Suggestion:** {suggestion}\n**Moderator:** {user}\n**Reason:** {reason}",
+                    "rejectedSuggestionDescription": "**Suggestion:** {suggestion}\n**Status:** `Rejected`",
+                    "rejectSuggestionDmDescription": "Your [suggestion]({link}) is rejected.\n\n**Status:** `Rejected`\n**Suggestion:** {suggestion}",
+                    "rejectedReasonDescription": "Specify a reason for the rejection below:",
+                    "rejectedReasonFooter": "Type \"skip\" if you dont wanna provide a reason.",
+                    "pendingSuggestionDescription": "**Suggestion:** {suggestion}\n**Status:** `Pending`",
+                    "noReasonProvided": "`No Reason Given`",
+                    "ownVote": "> You cant vote on your own suggestion!",
+                    "upVoteAdded": "> Your **UP** vote is now added.",
+                    "upVoteRemoved": "> Your **UP** vote was is now removed.",
+                    "downVoteAdded": "> Your **DOWN** vote is now added.",
+                    "downVoteRemoved": "> Your **DOWN** vote was is now removed."
+                }
+            },
             "embedder": {},
             "reactionroles": {},
             "announce": {}
