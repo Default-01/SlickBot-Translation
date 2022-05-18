@@ -166,7 +166,25 @@
                     "downVoteRemoved": "> Your **DOWN** vote was is now removed."
                 }
             },
-            "embedder": {},
+            "embedder": {
+                "general": {
+                    "embedFooter": "SlickBot Embedder",
+                    "notConfigured": "Not configured yet"
+                },
+                "create": {
+                    "embedTitle": "📄 Embedder | Create Embed",
+                    "reachedLimit": "You have reached the limit of **5** embeds, To remove these limits you can get Premium [HERE]({link})."
+                },
+                "edit": {
+                    "embedTitle": "📄 Embedder | Edit Embed"
+                },
+                "delete": {
+                    "embedTitle": "📄 Embedder | Delete Embed"
+                },
+                "display": {
+                    "embedTitle": "📄 Embedder | Display Embeds"
+                }
+            },
             "reactionroles": {},
             "announce": {
                 "embedTitle": "SlickBot | Announcements",
