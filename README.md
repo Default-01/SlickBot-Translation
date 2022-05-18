@@ -10,8 +10,9 @@ You can contribute to help us translating slickbot by making a PR in this reposi
 
 ## Supported Languages
 
-Language | Author | Contributors
-🇺🇸 | https://github.com/Default-01 | -
-🇳🇱 | https://github.com/Default-01 | -
+| Language | Author | Contributors |
+| ------------- |:-------------:| -----:|
+| 🇺🇸 | https://github.com/Default-01 | - |
+| 🇳🇱 | https://github.com/Default-01 | - |
 
 Join our [Support Server](https://discord.gg/rAgmnThdcz) here.
