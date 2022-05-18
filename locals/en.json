@@ -169,20 +169,44 @@
             "embedder": {
                 "general": {
                     "embedFooter": "SlickBot Embedder",
-                    "notConfigured": "Not configured yet"
+                    "notConfigured": "Not configured yet",
+                    "return": "Return"
                 },
                 "create": {
                     "embedTitle": "📄 Embedder | Create Embed",
-                    "reachedLimit": "You have reached the limit of **5** embeds, To remove these limits you can get Premium [HERE]({link})."
+                    "reachedLimit": "You have reached the limit of **5** embeds, To remove these limits you can get Premium [HERE]({link}).",
+                    "embedDescription": "`Below is the embed you're editing:`",
+                    "embedFooter": "Select an option below to edit the embed.",
+                    "embedWarning": "`Type the new  message {option}.` (Type skip to return or empty to reset.)",
+                    "embedNewFieldTitle": "`Type the new field title.` (Type \"skip\" to return or \"empty\" to reset.)",
+                    "embedNewFieldValue": "`Type the new field value.` (Type \"return\" to return.)",
+                    "embedNewFieldInline": "`Is this field inline?` (Type \"no\" or \"yes\" to make the field inline.)",
+                    "embedRemoveField": "`Select a field to remove.` (Select \"Return\" to return.)",
+                    "embedCreated": "Successfully send embed in {channel}.",
+                    "editSkipped": "`You skipped editing {option}.`",
+                    "invalidImage": "`The {option} image you provided was invalid.`",
+                    "invalidUrl": "`The {option} url you provided was invalid.`",
+                    "optionUpdated": "`You updated the message {option}.`",
+                    "selectOption": "Select an option to edit.",
+                    "confirmEmbed": "choose this option to confirm the embed."
                 },
                 "edit": {
-                    "embedTitle": "📄 Embedder | Edit Embed"
+                    "embedTitle": "📄 Embedder | Edit Embed",
+                    "invalidId": "I cant find any embeds with the provided ID.\n\n(Enable Developer Mode here: Settings > Appearance > Developer Mode).",
+                    "embedEdited": "Successfully edited embed in {channel}."
                 },
                 "delete": {
-                    "embedTitle": "📄 Embedder | Delete Embed"
+                    "embedTitle": "📄 Embedder | Delete Embed",
+                    "embedDeleted": "You have successfully deleted an embed."
                 },
                 "display": {
-                    "embedTitle": "📄 Embedder | Display Embeds"
+                    "embedTitle": "📄 Embedder | Display Embeds",
+                    "noEmbeds": "There are no embeds to display, Create an embed first!",
+                    "choosePage": "`Choose a page below to show the embed.`",
+                    "details": "Details:",
+                    "detailsInfo": "**ID:** `{id}`\n**Channel:** {channel}\n**Link:** [Jump]({link})",
+                    "pages": "Page: {page} of {total}",
+                    "timedOut": "I did not get a response in time, please use this command again to continue."
                 }
             },
             "reactionroles": {},
