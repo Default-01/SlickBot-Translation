@@ -168,7 +168,12 @@
             },
             "embedder": {},
             "reactionroles": {},
-            "announce": {}
+            "announce": {
+                "embedTitle": "SlickBot | Announcements",
+                "successEmbedDescription": "Successfully sent announcement in {channel}!",
+                "errorEmbedDescription": "I dont have enough permissions to send a message in {channel}.",
+                "embedFooter": "SlickBot Announcements"
+            }
         },
         "configuration": {
             "general": {
