@@ -209,7 +209,43 @@
                     "timedOut": "I did not get a response in time, please use this command again to continue."
                 }
             },
-            "reactionroles": {},
+            "reactionroles": {
+                "general": {
+                    "embedFooter": "SlickBot ReactionRoles",
+                    "notConfigured": "Not configured yet",
+                    "reactions": "Reactions",
+                    "noReactions": "No reactions set"
+                },
+                "create": {
+                    "embedTitle": "📄 ReactionRoles | Create reaction role",
+                    "reachedLimit": "You have reached the limit of **5** rroles, To remove these limits you can get Premium [HERE]({link}).",
+                    "selectOption": "Select an option to edit.",
+                    "confirmEmbed": "choose this option to confirm the reaction role.",
+                    "embedDescription": "`Below is the embed you're editing:`",
+                    "embedFooter": "Select an option below to edit the reaction role.",
+                    "chooseOption": "`Choose a option below to update this rrole:`",
+                    "embedWarning": "`Type the new  message {option}.` (Type skip to return or empty to reset.)",
+                    "mentionRoleOption": "`Mention the Role below this message.` (type \"return\" to return)",
+                    "selectEmojiOption": "`React to this message with the emoji!` (type \"return\" to return)",
+                    "emojiAlreadyAdded": "The emoji you wanna add was already added!",
+                    "emojiRemoveOption": "`React to this message with the emoji you wanna remove.` (type \"return\" to return)",
+                    "invalidReaction": "The Emoji you provided is not a valid reaction.",
+                    "rroleCreated": "Successfully send reaction role in {channel}.",
+                    "editSkipped": "`You skipped editing {option}.`",
+                    "updatedOption": "`You updated the message {option}.`",
+                    "invalidUrl": "`The {option} url you provided was invalid.`",
+                    "invalidImage": "`The {option} image you provided was invalid.`"
+                },
+                "edit": {
+                    "embedTitle": "📄 ReactionRoles | Edit reaction role",
+                    "invalidId": "I cant find any reaction role with the provided ID.\n\n(Enable Developer Mode here: Settings > Appearance > Developer Mode)."
+                },
+                "delete": {
+                    "embedTitle": "📄 ReactionRoles | Delete Reaction role",
+                    "rroleDeleted": "You have successfully deleted an reaction role."
+                },
+                "display": {}
+            },
             "announce": {
                 "embedTitle": "SlickBot | Announcements",
                 "successEmbedDescription": "Successfully sent announcement in {channel}!",
