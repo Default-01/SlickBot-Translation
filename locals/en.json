@@ -214,7 +214,8 @@
                     "embedFooter": "SlickBot ReactionRoles",
                     "notConfigured": "Not configured yet",
                     "reactions": "Reactions",
-                    "noReactions": "No reactions set"
+                    "noReactions": "No reactions set",
+                    "details": "Details:"
                 },
                 "create": {
                     "embedTitle": "📄 ReactionRoles | Create reaction role",
@@ -244,7 +245,14 @@
                     "embedTitle": "📄 ReactionRoles | Delete Reaction role",
                     "rroleDeleted": "You have successfully deleted an reaction role."
                 },
-                "display": {}
+                "display": {
+                    "embedTitle": "📄 ReactionRoles | Display Reaction Roles",
+                    "choosePage": "`Choose a page below to show the rrole.`",
+                    "notFound": "Could not find reaction role. (message deleted)",
+                    "detailsInfo": "**ID:** `${id}`\n**Channel:** {channel}\n**Link:** [Jump]({link})",
+                    "pages": "Page: {page} of {total}",
+                    "timedOut": "I did not get a response in time, please use this command again to continue."
+                }
             },
             "announce": {
                 "embedTitle": "SlickBot | Announcements",
