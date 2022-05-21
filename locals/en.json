@@ -86,6 +86,23 @@
                     "warnsFormat": "> **ID:** `{id}` | **Moderator:** {moderator} | **Member:** {member}\n> **Warning:** {warning}\n",
                     "noWarns": "No warns to display"
                 }
+            },
+            "automod": {
+                "general": {
+                    "embedTitle": "🛡️ SlickBot Automod",
+                    "embedFooter": "SlickBot AutoMod",
+                    "warnDescription": "{moderator} warned {member}.\n\n→ **Warning:** `{reason}`",
+                    "muteDescription": "{moderator} muted {member} for `{time} Minutes`.\n\n→ **Duration:** {duration}\n→ **Reason:** `{reason}`",
+                    "warnMuteDescription": "{moderator} muted & warned {member}.\n\n→ **Reason:** `{reason}`\n→ **Duration:** {duration}",
+                    "emojiReason": "typing too many emojis",
+                    "mentionsReason": "mentioning too many roles or members",
+                    "staffPingReason": "pinging staff",
+                    "duplicateReason": "sending duplicated messages",
+                    "capsReason": "typing too much CAPS",
+                    "spamReason": "spamming",
+                    "linksReason": "sending forbidden url(s)",
+                    "invitesReason": "sending forbidden invite link(s)"
+                }
             }
         },
         "utility": {
