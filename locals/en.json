@@ -335,7 +335,7 @@
             "automod": {
                 "embedTitle": "🤖 AutMod | Configuration",
                 "embedFooter": "SlickBot AutoMod",
-                "selectOption": "Select a category below:",
+                "selectOption": "`Select a atomod category below:`",
                 "antiInvite": "Anti Invites",
                 "antiUrl": "Anti Url",
                 "antiSpam": "Anti Spam",
