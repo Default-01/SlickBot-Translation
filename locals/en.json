@@ -7,7 +7,8 @@
     },
     "modules": {
         "general": {
-            "noPermission": "You do not have enough permissions to use this command."
+            "noPermission": "You do not have enough permissions to use this command.",
+            "return": "Return"
         },
         "moderation": {
             "general": {
@@ -85,23 +86,6 @@
                     "warnsMessage": "Server warns:\n\n{warns}",
                     "warnsFormat": "> **ID:** `{id}` | **Moderator:** {moderator} | **Member:** {member}\n> **Warning:** {warning}\n",
                     "noWarns": "No warns to display"
-                }
-            },
-            "automod": {
-                "general": {
-                    "embedTitle": "🛡️ SlickBot Automod",
-                    "embedFooter": "SlickBot AutoMod",
-                    "warnDescription": "{moderator} warned {member}.\n\n→ **Warning:** `{reason}`",
-                    "muteDescription": "{moderator} muted {member} for `{time} Minutes`.\n\n→ **Duration:** {duration}\n→ **Reason:** `{reason}`",
-                    "warnMuteDescription": "{moderator} muted & warned {member}.\n\n→ **Reason:** `{reason}`\n→ **Duration:** {duration}",
-                    "emojiReason": "typing too many emojis",
-                    "mentionsReason": "mentioning too many roles or members",
-                    "staffPingReason": "pinging staff",
-                    "duplicateReason": "sending duplicated messages",
-                    "capsReason": "typing too much CAPS",
-                    "spamReason": "spamming",
-                    "linksReason": "sending forbidden url(s)",
-                    "invitesReason": "sending forbidden invite link(s)"
                 }
             }
         },
@@ -231,8 +215,7 @@
                     "embedFooter": "SlickBot ReactionRoles",
                     "notConfigured": "Not configured yet",
                     "reactions": "Reactions",
-                    "noReactions": "No reactions set",
-                    "details": "Details:"
+                    "noReactions": "No reactions set"
                 },
                 "create": {
                     "embedTitle": "📄 ReactionRoles | Create reaction role",
@@ -262,14 +245,7 @@
                     "embedTitle": "📄 ReactionRoles | Delete Reaction role",
                     "rroleDeleted": "You have successfully deleted an reaction role."
                 },
-                "display": {
-                    "embedTitle": "📄 ReactionRoles | Display Reaction Roles",
-                    "choosePage": "`Choose a page below to show the rrole.`",
-                    "notFound": "Could not find reaction role. (message deleted)",
-                    "detailsInfo": "**ID:** `${id}`\n**Channel:** {channel}\n**Link:** [Jump]({link})",
-                    "pages": "Page: {page} of {total}",
-                    "timedOut": "I did not get a response in time, please use this command again to continue."
-                }
+                "display": {}
             },
             "announce": {
                 "embedTitle": "SlickBot | Announcements",
@@ -355,6 +331,82 @@
                 "optionToggleSelfVoteDesc": "Toggle wether the author of a suggestion can vote on their own suggestion.",
                 "optionSetModChannelName": "Set Mod Channel",
                 "optionSetModChannelDesc": "Set a Suggest Mod channel to enable staff moderation."
+            },
+            "automod": {
+                "embedTitle": "🤖 AutMod | Configuration",
+                "embedFooter": "SlickBot AutoMod",
+                "selectOption": "Select a category below:",
+                "antiInvite": "Anti Invites",
+                "antiUrl": "Anti Url",
+                "antiSpam": "Anti Spam",
+                "antiCaps": "Anti Caps",
+                "antiDupe": "Anti Duplicates",
+                "antiPing": "Anti StaffPing",
+                "antiMention": "Anti Mass Mention",
+                "antiEmoji": "Anti Emoji Spam",
+                "enabled": "Enabled",
+                "enable": "Enable",
+                "disable": "Disable",
+                "disabled": "Disabled",
+                "optionEmbedTitle": "🛡️ AutoMod | {option}",
+                "optionEmbedDesc": "`Below are all {option} options displayed:`",
+                "optionToggleName": "Toggle {option}",
+                "optionToggleDesc": "Toggle this automod feature On/Off",
+                "optionToggleLabel": "Enabled:",
+                "optionIgnoreStaffName": "Toggle Ignore Staff",
+                "optionIgnoreStaffDesc": "Toggle staff ignore On/Off",
+                "optionIgnoreStaffLabel": "Ignore Staff:",
+                "optionIgnoreModName": "Toggle Ignore Mods",
+                "optionIgnoreModDesc": "Toggle moderator ignore On/Off",
+                "optionIgnoreModLabel": "Ignore Mods:",
+                "optionIgnoreChannelName": "Set Ignore Channels",
+                "optionIgnoreChannelDesc": "Add/Remove ignore channels",
+                "optionIgnoreChannelLabel": "Ignore Channels:",
+                "optionToggleWarnsName": "Toggle Warnings",
+                "optionToggleWarnsDesc": "Toggle warning punishment",
+                "optionToggleWarnsLabel": "Warning:",
+                "optionToggleDeleteName": "Toggle Delete Message",
+                "optionToggleDeleteDesc": "Toggle delete message punishment",
+                "optionToggleDeleteLabel": "Delete Message:",
+                "optionMuteDurationName": "Mute Duration",
+                "optionMuteDurationDesc": "Set the mute duration",
+                "optionMuteDurationLabel": "Mute Duration:",
+                "optionAddUrlName": "Add Allowed Url",
+                "optionAddUrlLabel": "Allowed Links:",
+                "optionNoUrl": "`No Url(s)`",
+                "optionAddUrlDesc": "Add new URL to the ignore list",
+                "optionDelUrlName": "Delete Allowed Url",
+                "optionDelUrlDesc": "Remove a URL from the ignore list",
+                "optionMessageName": "Set Allowed Messages",
+                "optionMessageDesc": "Set the allowed amount of messages",
+                "optionMessageLabel": "Allowed Messages:",
+                "optionCooldownName": "Set Cooldown",
+                "optionCooldownDesc": "Set the amount of cooldown seconds",
+                "optionCooldownLabel": "Cooldown:",
+                "optionPercentageName": "Set Percentage",
+                "optionPercentageDesc": "Set the allowed percentage",
+                "optionPercentageLabel": "Allowed Percentage:",
+                "optionAmountName": "Set Amount",
+                "optionAmountDesc": "Set the allowed amount",
+                "optionAmountLabel": "Allowed Amount:",
+                "optionStaffPingName": "Toggle StaffPing",
+                "optionStaffPingDesc": "Allow/Disallow staff pinging",
+                "optionStaffPingLabel": "Allow Staff Ping:",
+                "optionModPingName": "Toggle ModPing",
+                "optionModPingDesc": "Allow/Disallow mod pinging",
+                "optionModPingLabel": "Allow Mod Ping:",
+                "optionMaxRolesName": "Set Roles Amount",
+                "optionMaxRolesDesc": "Set the allowed amount of role mentions",
+                "optionMaxRolesLabel": "Max Roles Amount:",
+                "optionMaxUsersName": "Set Users Amount",
+                "optionMaxUsersDesc": "Set the amount of allowed user mentions",
+                "optionMaxUsersLabel": "Max Users Amount:",
+                "removedChannel": "Successfully removed {channel}.",
+                "addedChannel": "Successfully added {channel}.",
+                "mentionChannel": "You must mention a channel.",
+                "validNumber": "You must provide a valid number.",
+                "returnFooter": "Type \"return\" to return to the main menu.",
+                "optionSet": "You have successfully set {category} {option} to {value}."
             }
         }
     }
