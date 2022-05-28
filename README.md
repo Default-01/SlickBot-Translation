@@ -14,5 +14,6 @@ You can contribute to help us translating slickbot by making a PR in this reposi
 | ------------- |:-------------:| -----:|
 | 🇺🇸 | Default-01 | - |
 | 🇳🇱 | Default-01 | - |
+| 🇩🇪 | Tobeey1993 | LordMacke
 
 Join our [Support Server](https://discord.gg/rAgmnThdcz) here.
