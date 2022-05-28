@@ -1,0 +1,422 @@
+{
+    "mainInfo": {
+        "version": "1.0.0",
+        "language": "German (DE)",
+        "emoji": "🇩🇪",
+        "contributors": [
+		"Tobeey",
+		"LordMacke"
+		]
+    },
+    "modules": {
+        "general": {
+            "noPermission": "Sie haben nicht genügend Berechtigungen, um diesen Befehl zu verwenden.",
+            "return": "Zurück"
+        },
+        "moderation": {
+            "general": {
+                "moderation": "Moderation",
+                "noReason": "Kein Grund angegeben"
+            },
+            "bans": {
+                "ban": {
+                    "embedTitle": "🛡️ Moderation | Ban Hammer",
+                    "successEmbedDesc": "{author} banned {user} von diesem Server.\n\n→ Grund: `{reason}`\n→ Duration: `{duration}` {time}",
+                    "ErrorEmbedDesc": "Das eingegebene Datum `{data}` ist keine gültige Dauer.\n\nVerwenden Sie ein Format wie: `1 Tag“ oder „1 Monat“.` etc...",
+                    "PermsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um jemanden von diesem Server zu bannen."
+                },
+                "unban": {
+                    "embedTitle": "🛡️ Moderation | Unbanning",
+                    "successEmbedDesc": "{author} unbanned `{user}` von diesem Server.",
+                    "errorEmbedDesc": "Der Benutzer, den Sie entsperren möchten, ist nicht gebannt.",
+                    "PermsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um jemanden von diesem Server zu bannen."
+                },
+                "display": {
+                    "embedTitle": "🛡️ Moderation | Bans Display",
+                    "errorEmbedDesc": "Es gibt keine bans anzuzeigen!",
+                    "bansMessage": "`Unten sind die gebannten Mitglieder aufgelistet:`",
+                    "bansFormat": "**{member}** (`{memberID}`)\nModerator: {moderator} Dauer: {duration}\n**Grund:** {reason}"
+                }
+            },
+            "mutes": {
+                "add": {
+                    "embedTitle": "🛡️ Moderation | Mute",
+                    "successEmbedDesc": "{author} muted {user} für `{duration}` {time}.\n\n→ Grund: `{reason}`",
+                    "ErrorEmbedDesc": "Das angegebene Mitglied ist bereits stummgeschaltet.",
+                    "PermsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um den angegebenen Benutzer stummzuschalten."
+                },
+                "remove": {
+                    "embedTitle": "🛡️ Moderation | Unmute",
+                    "successEmbedDesc": "{author} unmuted {user}.",
+                    "ErrorEmbedDesc": "Das angegebene Mitglied ist nicht stummgeschaltet.",
+                    "PermsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um die Stummschaltung des angegebenen Benutzers aufzuheben."
+                },
+                "display": {
+                    "embedTitle": "🛡️ Moderation | Mutes Display",
+                    "errorEmbedDesc": "Es gibt keine Stummschaltungen anzuzeigen!",
+                    "mutesMessage": "`Unten sind die stummgeschalteten Mitglieder aufgelistet:`",
+                    "mutesFormat": "**{member}** (`${memberID}`)\n**Dauer:** {duration}"
+                }
+            },
+            "kick": {
+                "embedTitle": "🛡️ Moderation | Kick",
+                "successEmbedDesc": "{author} kickt {user} von diesem Server.\n\n→ Grund: `{reason}`",
+                "PermsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um den angegebenen Benutzer zu kicken."
+            },
+            "locker": {
+                "embedTitle": "🛡️ Moderation | Locker",
+                "lockMessage": "{author} diesen Kanal gesperrt 🔒",
+                "unlockMessage": "{author} diesen Kanal freigeschaltet 🔓",
+                "permsEmbedDesc": "Ich habe nicht genügend Berechtigungen, um einen Kanal zu sperren/entsperren."
+            },
+            "warns": {
+                "add": {
+                    "embedTitle": "🛡️ Moderation | Warn",
+                    "successEmbedDesc": "{author} gewarnt {user}.\n\n→ **Warnung:** `{warning}`",
+                    "errorEmbedDesc": "Sie müssen einen Warngrund oder eine Voreinstellung angeben, um ein Mitglied zu warnen."
+                },
+                "remove": {
+                    "embedTitle": "🛡️ Moderation | UnWarn",
+                    "successEmbedDesc": "{author} eine Warnung entfernt von {user}.\n\n→ **Warnung:** {warning}",
+                    "errorEmbedDesc": "Ich konnte keine Warnung mit der angegebenen ID finden."
+                },
+                "display": {
+                    "embedTitle": "🛡️ Moderation | Display Warnungen",
+                    "userWarnsMessage": "{user}'s Warnungen:\n\n{warns}",
+                    "userWarnsFormat": "> **ID:** `{id}` | **Moderator:** {moderator}\n> **Warnung:** {warning}\n",
+                    "modWarnsMessage": "{user}'s Moderator Warnungen:\n\n{warns}",
+                    "modWarnsFormat": "> **ID:** `{id}` | **Member:** {member}\n> **Warnung:** {warning}\n",
+                    "warnsMessage": "Server Warnungen:\n\n{warns}",
+                    "warnsFormat": "> **ID:** `{id}` | **Moderator:** {moderator} | **Member:** {member}\n> **Warnung:** {warning}\n",
+                    "noWarns": "Keine Warnungen zum Anzeigen"
+                }
+            }
+        },
+        "utility": {
+            "polls": {
+                "general": {
+                    "removedVote": "> Sie haben die Stimme für **{option}** entfernt",
+                    "addedVote": "> Sie haben für **{option}** gestimmt"
+                },
+                "create": {
+                    "optionSyntaxError": "> Sie müssen **2** Umfrageoptionen mit maximal **10** (Premium 15) Optionen bereitstellen. Du hast: `{value}`",
+                    "durationSyntaxError": "> Die angegebene Dauer ist ungültig. Verwendung: `1 Tag`, `10 min` oder `1d` etc...",
+                    "createdEmbedDescription": "{author} hat eine neue Umfrage in {channel} erstellt!",
+                    "pollDurationPrefix": "Endet am",
+                    "pollFooterText": "Erstellt von {user}"
+                },
+                "ended": {
+                    "pollTitle": "{title} Beendet!",
+                    "pollDuration": "Endet um",
+                    "pollFooterText": "Erstellt von {user} • Umfrage endete um"
+                },
+                "settings": {
+                    "embedTitle": "⚙️ Umfrageeinstellungen",
+                    "votesEmbedTitle": "⚙️ Umfragestimmen",
+                    "yourVotes": "Ihre Stimmen: {votes}",
+                    "buttonVotes": "Umfragestimmen",
+                    "listVotes": "votes",
+                    "optionVotes": "Wähler für:",
+                    "optionNoVotes": "Für diese Option gibt es keine Stimmen.",
+                    "selectOptions": "Wählen Sie eine Umfrageoption, um die Stimmen anzuzeigen.",
+                    "return": "Zurück",
+                    "selectReturn": "Zurück zum Einstellungsmenü.",
+                    "buttonEnd": "Umfrage beenden",
+                    "buttonEndConfirm": "Umfrage beenden Bestätigen",
+                    "endedEmbedDescription": "Sie haben die Umfrage erfolgreich beendet.",
+                    "endedEmbedFooter": "Beendet von {user}",
+                    "buttonDelete": "Umfrage löschen",
+                    "buttonDeleteConfirm": "Löschen Bestätigen",
+                    "deletedEmbedDescription": "Sie haben die Umfrage erfolgreich gelöscht.",
+                    "deletedEmbedFooter": "Gelöscht von {user}"
+                }
+            },
+            "suggestions": {
+                "general": {
+                    "suggestion": "Suggestion",
+                    "embedFooter": "SlickBot Suggestions",
+                    "approve": "Genehmigen",
+                    "reject": "Ablehnen"
+                },
+                "create": {
+                    "wrongChannel": "Sie müssen einen Vorschlag in einem Vorschlagskanal wie {channels} senden.",
+                    "noChannels": "`Es sind keine Vorschlagskanäle verfügbar`",
+                    "suggestionCreated": "✅ Ihr Vorschlag wird an die Vorschlagsmoderatoren gesendet, sobald er genehmigt wurde, wird er in diesem Kanal angezeigt.",
+                    "newSuggestionModEmbedTitle": "Neuer Vorschlag",
+                    "newSuggestionModEmbedDescription": "**Member:** {user}\n**Suggestion:** {suggestion}\n**Status:** Moderation",
+                    "newSuggestionEmbedDescription": "**Suggestion:** {suggestion}\n**Status:** Pending"
+                },
+                "moderation": {
+                    "approvedEmbedTitle": "Genehmigter Vorschlag",
+                    "approvedDescription": "Vorschlag wurde von {user} genehmigt!\n\n**Channel:** {channel}\n**Status:** `Ausstehend`\n**Suggestion:** {suggestion}",
+                    "approvedDmEmbedTitle": "Vorschlag Moderation bestanden",
+                    "approvedDmEmbedDescription": "Ihr [Vorschlag]({link}) hat die Moderation bestanden!\n\n**Status:** `Pending`\n**Suggestion:** {suggestion}",
+                    "approvedSuggestionDescription": "**Vorschlag:** {suggestion}\n**Status:** `Genehmigt`",
+                    "approvedDmSuggestionDescription": "Ihr [Vorschlag]({link}) wurde genehmigt!\n\n**Status:** `Genehmigt`\n**Suggestion:** {suggestion}",
+                    "rejectedEmbedTitle": "Abgelehnter Vorschlag",
+                    "rejectedEmbedDescription": "Vorschlag wird abgelehnt und entfernt.\n\n**Suggestion:** {suggestion}\n**Moderator:** {user}\n**Grund:** {reason}}",
+                    "rejectedDmEmbedTitle": "Suggestion Failed Moderation",
+                    "rejectedDmEmbedDescription": "Ihr Vorschlag hat die Moderation nicht bestanden!\n\n**Suggestion:** {suggestion}\n**Moderator:** {user}\n**Reason:** {reason}",
+                    "rejectedSuggestionDescription": "**Vorschlag:** {suggestion}\n**Status:** `Abgelehnt`",
+                    "rejectSuggestionDmDescription": "Ihr [Vorschlag]({link}) wurde abgelehnt.\n\n**Status:** `Rejected`\n**Suggestion:** {suggestion}",
+                    "rejectedReasonDescription": "Geben Sie unten einen Grund für die Ablehnung an:",
+                    "rejectedReasonFooter": "Geben Sie \"skip\" ein, wenn Sie keinen Grund angeben möchten.",
+                    "pendingSuggestionDescription": "**Vorschlag:** {suggestion}\n**Status:** `Pending`",
+                    "noReasonProvided": "`Ohne Grund`",
+                    "ownVote": "> Sie können nicht über Ihren eigenen Vorschlag abstimmen!",
+                    "upVoteAdded": "> Ihre **UP**-Stimme ist jetzt hinzugefügt.",
+                    "upVoteRemoved": "> Ihre **UP**-Stimme wurde jetzt entfernt.",
+                    "downVoteAdded": "> Ihre **DOWN**-Stimme ist jetzt hinzugefügt.",
+                    "downVoteRemoved": "> Ihre **DOWN**-Stimme wurde jetzt entfernt."
+                }
+            },
+            "embedder": {
+                "general": {
+                    "embedFooter": "SlickBot Einbetter",
+                    "notConfigured": "Noch nicht konfiguriert",
+                    "return": "Zurück"
+                },
+                "create": {
+                    "embedTitle": "📄 Einbetter | Einbettung erstellen",
+                    "reachedLimit": "Sie haben das Limit von **5** Einbettungen erreicht. Um diese Limits aufzuheben, können Sie [HIER] Premium erwerben.({link}).",
+                    "embedDescription": "`Unten ist die Einbettung, die Sie bearbeiten:`",
+                    "embedFooter": "Wählen Sie unten eine Option aus, um die Einbettung zu bearbeiten.",
+                    "embedWarning": "`Geben Sie die neue Nachricht ein {option}.` (Geben Sie skip ein, um zurückzukehren, oder empty, um zurückzusetzen.)",
+                    "embedNewFieldTitle": "`Geben Sie den neuen Feldtitel ein.` (Geben Sie \"skip\" ein, um zurückzukehren, oder \"empty\", um zurückzusetzen.)",
+                    "embedNewFieldValue": "`Geben Sie den neuen Feldwert ein.` (Geben Sie \"return\" ein, um zurückzukehren.)",
+                    "embedNewFieldInline": "`Ist dieses Feld inline?` (Geben Sie \"nein\" oder \"ja\" ein, um das Feld inline zu machen.)",
+                    "embedRemoveField": "`Wählen Sie ein zu entfernendes Feld aus.` (Wählen Sie \"Zurück\", um zurückzukehren.)",
+                    "embedCreated": "Einbettung erfolgreich in {channel} gesendet.",
+                    "editSkipped": "`Sie haben die Bearbeitung von {option} übersprungen.`",
+                    "invalidImage": "`Das von Ihnen bereitgestellte {option}-Bild war ungültig.`",
+                    "invalidUrl": "`Die von Ihnen angegebene {option}-URL war ungültig.`",
+                    "optionUpdated": "`Sie haben die Nachricht {option} aktualisiert.`",
+                    "selectOption": "Wählen Sie eine Option zum Bearbeiten aus.",
+                    "confirmEmbed": "Wählen Sie diese Option, um die Einbettung zu bestätigen."
+                },
+                "edit": {
+                    "embedTitle": "📄Einbetter | Einbettung bearbeiten",
+                    "invalidId": "Ich kann keine Einbettungen mit der angegebenen ID finden.\n\n(Enable Developer Mode here: Settings > Appearance > Developer Mode).",
+                    "embedEdited": "Einbettung in {channel} erfolgreich bearbeitet."
+                },
+                "delete": {
+                    "embedTitle": "📄 Einbetter | Einbettung löschen",
+                    "embedDeleted": "Sie haben erfolgreich eine Einbettung gelöscht."
+                },
+                "display": {
+                    "embedTitle": "📄 Einbetter | Einbettungen anzeigen",
+                    "noEmbeds": "Es sind keine Einbettungen zum Anzeigen vorhanden. Erstellen Sie zuerst eine Einbettung!",
+                    "choosePage": "`Wählen Sie unten eine Seite aus, um die Einbettung anzuzeigen.`",
+                    "details": "Details:",
+                    "detailsInfo": "**ID:** `{id}`\n**Channel:** {channel}\n**Link:** [Jump]({link})",
+                    "pages": "Seite: {page} von {total}",
+                    "timedOut": "Ich habe nicht rechtzeitig eine Antwort erhalten, bitte verwenden Sie diesen Befehl erneut, um fortzufahren."
+                }
+            },
+            "reactionroles": {
+                "general": {
+                    "embedFooter": "SlickBot Reaktionsrollen",
+                    "notConfigured": "Noch nicht konfiguriert",
+                    "reactions": "Reaktionen",
+                    "noReactions": "Keine Reaktionen eingestellt"
+                },
+                "create": {
+                    "embedTitle": "📄 Reaktionsrollen | Reaktionsrolle erstellen",
+                    "reachedLimit": "Sie haben das Limit von **5** Rollen erreicht. Um diese Limits aufzuheben, können Sie [HIER]({link}) Premium erwerben.",
+                    "selectOption": "Wählen Sie eine Option zum Bearbeiten aus.",
+                    "confirmEmbed": "Wählen Sie diese Option, um die Reaktionsrolle zu bestätigen.",
+                    "embedDescription": "`Unten ist die Einbettung, die Sie bearbeiten:`",
+                    "embedFooter": "Wählen Sie unten eine Option aus, um die Reaktionsrolle zu bearbeiten.",
+                    "chooseOption": "`Wählen Sie unten eine Option aus, um diese Rolle zu aktualisieren:`",
+                    "embedWarning": "`Geben Sie die neue Nachricht {option} ein.` (Geben Sie skip zum Zurück gehen oder empty zum Zurücksetzen ein.)",
+                    "mentionRoleOption": "`Erwähnen Sie die Rolle unter dieser Nachricht.` (geben Sie \"return\" ein, um zurückzukehren)",
+                    "selectEmojiOption": "`Reagieren Sie auf diese Nachricht mit dem Emoji!` (geben Sie \"return\" ein, um zurückzukehren)",
+                    "emojiAlreadyAdded": "Das Emoji, das Sie hinzufügen möchten, wurde bereits hinzugefügt!",
+                    "emojiRemoveOption": "`Reagieren Sie auf diese Nachricht mit dem Emoji, das Sie entfernen möchten.` (geben Sie \"return\" ein, um zurückzukehren)",
+                    "invalidReaction": "Das von Ihnen bereitgestellte Emoji ist keine gültige Reaktion.",
+                    "rroleCreated": "Reaktionsrolle in {channel} erfolgreich senden.",
+                    "editSkipped": "`Sie haben die Bearbeitung von {option} übersprungen.`",
+                    "updatedOption": "`Sie haben die Nachricht {option} aktualisiert.`",
+                    "invalidUrl": "`Die von Ihnen angegebene {option}-URL war ungültig.`",
+                    "invalidImage": "`Das von Ihnen bereitgestellte {option}-Bild war ungültig.`"
+                },
+                "edit": {
+                    "embedTitle": "📄 Reaktionsrollen | Reaktionsrolle bearbeiten",
+                    "invalidId": "Ich kann keine Reaktionsrolle mit der angegebenen ID finden.\n\n(Enable Developer Mode here: Settings > Appearance > Developer Mode)."
+                },
+                "delete": {
+                    "embedTitle": "📄 Reaktionsrollen | Reaktionsrolle löschen",
+                    "rroleDeleted": "Sie haben erfolgreich eine Reaktionsrolle gelöscht."
+                },
+                "display": {}
+            },
+            "announce": {
+                "embedTitle": "SlickBot | Ankündigungen",
+                "successEmbedDescription": "Ankündigung in {channel} erfolgreich gesendet!",
+                "errorEmbedDescription": "Ich habe nicht genügend Berechtigungen, um eine Nachricht in {channel} zu senden.",
+                "embedFooter": "SlickBot Ankündigungen"
+            }
+        },
+        "configuration": {
+            "general": {
+                "embedTitle": "⚙️ SlickBot | Konfiguration",
+                "embedFooter": "SlickBot Konfigurationen",
+                "selectCategory": "Wählen Sie unten eine Kategorie zum Bearbeiten aus:",
+                "selectOption": "(Wählen Sie unten eine Option zum Aktualisieren aus)",
+                "returnFooter": "Geben Sie \"return\" ein, um zum Hauptmenü zurückzukehren.",
+                "timedOut": "Ich habe nicht rechtzeitig eine Antwort erhalten. Bitte verwenden Sie erneut `/settings`, um fortzufahren.",
+                "settings": "Einstellungen",
+                "return": "Zurück",
+                "returnDescription": "Wählen Sie diese Option, um zum Hauptmenü zurückzukehren.",
+                "optionDescription": "Wählen Sie unten eine Option aus, um diese Einstellung zu aktualisieren.",
+                "optionEmbedTitle": "⚙️ Update {option}",
+                "optionUpdated": "**{option}** wurde aktualisiert **{value}**",
+                "mentionRoles": "Erwähnen Sie unten die Rollen, die Sie aktualisieren möchten.",
+                "mentionChannels": "Erwähnen Sie die Kanäle unten. (Geben Sie \"skip\" ein, um es leer zu lassen)",
+                "rolesUpdated": "Updated {roles} für {option}",
+                "channelsUpdated": "Updated {channels} für {option}",
+                "channelsRemoved": "Kanäle erfolgreich entfernt aus {option}.",
+                "toggleOption": "Wählen Sie unten aus, ob Sie aktivieren oder deaktivieren möchten {option}.",
+                "toggleEnabled": "Sie haben aktiviert {option}",
+                "toggleDisabled": "Sie haben deaktiviert {option}",
+                "enabled": "Aktiviert",
+                "disabled": "Deaktiviert",
+                "notSet": "Nicht festgelegt"
+            },
+            "premium": {
+                "embedTitle": "💎 SlickBot | Premium",
+                "embedFooter": "SlickBot Premium",
+                "noPremium": "Sie haben noch kein Premium, sehen Sie sich an, was wir anbieten [HERE]({link}).\n\nTritt unserem Support-Server bei [HERE]({invite})!",
+                "reachedLimit": "Sie haben das Limit von erreicht **{amount}** premium servers! Um mehr Server zu erhalten, können Sie Ihre Stufe upgraden.",
+                "timedOut": "Dieser Befehl ist abgelaufen, verwenden Sie `/patreon` wieder um fortzufahren.",
+                "updatedPremium": "Premium-Server erfolgreich aktualisiert.",
+                "serverSelect": "`Wählen Sie einen Server aus, um Premium zu aktivieren/deaktivieren.`",
+                "servers": "ID: `{id}`\nPremium: {premium}\nMitgliederzahl: `{count}`",
+                "serverNotFound": "Die angegebene Server-ID wurde nicht gefunden.",
+                "slectServer": "Geben Sie unten die Server-ID ein, um Premium zu aktivieren."
+            },
+            "language": {
+                "name": "Sprache",
+                "title": "🌐 Sprache Einstellungen",
+                "description": "Ändern Sie hier die Spracheinstellungen des Bots.",
+                "updateLangName": "Sprache aktualisieren",
+                "updateLangDescription": "Wählen Sie diese Option aus, um die Bot-Sprache zu aktualisieren."
+            },
+            "moderation": {
+                "name": "Moderation",
+                "title": "🛡️ Moderation Einstellungen",
+                "description": "Change the moderation settings.",
+                "optionStaffName": "Mitgliederrollen",
+                "optionAddStaffRoleName": "Mitgliederrolle hinzufügen",
+                "optionAddStaffRoleDesc": "Wählen Sie diese Option, um eine Mitgliederrolle hinzuzufügen.",
+                "optionRemStaffRoleName": "Entferne Mitgliederrolle",
+                "optionRemStaffRoleDesc": "Wählen Sie diese Option, um eine Mitgliederrolle zu entfernen."
+            },
+            "suggestions": {
+                "name": "Suggestions",
+                "title": "💡 Suggestion Einstellungen",
+                "description": "Ändere die suggestions Einstellungen.",
+                "optionEmojisName": "Emojis",
+                "optionDoubleVoteName": "Doppelte Abstimmung",
+                "optionSelfVoteName": "Selbstabstimmung",
+                "optionModRoleName": "Suggest Mod-Rolle",
+                "optionModChannelName": "Mod Kanal",
+                "optionSuggestChannelName": "Suggest Kanäle",
+                "optionAddSuggestChannelName": "Hinzufüge Suggestion Kanal",
+                "optionAddSuggestChannelDesc": "Hinzufüge ein suggestion Kanal.",
+                "optionRemSuggestChannelName": "Entferne Suggestion Kanal",
+                "optionRemSuggestChannelDesc": "Entferne ein suggestion Kanal.",
+                "optionSetSuggestModName": "Setzte die Mod-Rolle",
+                "optionSetSuggestModDesc": "Setze eine Suggest Mod-Rolle.",
+                "optionToggleDoubleVoteName": "Doppelte Stimmen umschalten",
+                "optionToggleDoubleVoteDesc": "Schalten Sie um, ob Mitglieder über mehrere Optionen oder nur über eine abstimmen können.",
+                "optionToggleSelfVoteName": "Selbstabstimmung umschalten",
+                "optionToggleSelfVoteDesc": "Schalten Sie um, ob der Autor eines Vorschlags über seinen eigenen Vorschlag abstimmen kann.",
+                "optionSetModChannelName": "Mod-Kanal einstellen",
+                "optionSetModChannelDesc": "Legen Sie einen Suggest Mod-Kanal fest, um die Mitgliedermoderation zu aktivieren."
+            },
+            "automod": {
+                "embedTitle": "🤖 AutMod | Konfiguration",
+                "embedFooter": "SlickBot AutoMod",
+                "selectOption": "`Wählen Sie unten eine Automod-Kategorie aus:`",
+                "antiInvite": "Anti Einladungen",
+                "antiUrl": "Anti Url",
+                "antiSpam": "Anti Spam",
+                "antiCaps": "Anti Caps",
+                "antiDupe": "Anti Duplikate",
+                "antiPing": "Anti Mitglieder Pingen",
+                "antiMention": "Anti Massenerwähnung",
+                "antiEmoji": "Anti Emoji Spam",
+                "enabled": "`Aktiviert`",
+                "enable": "aktivieren",
+                "disable": "deaktivieren",
+                "disabled": "`Deaktiviert`",
+                "options": "Options",
+                "ignores": "Ignoriert",
+                "actions": "Aktionen",
+                "optionEmbedTitle": "🤖 AutoMod | {option}",
+                "optionEmbedDesc": "`Unten werden alle {option} Optionen aufgelistet:`",
+                "optionToggleName": "Umschalten {option}",
+                "optionToggleDesc": "Umschalten diese Automod-Funktion On/Off",
+                "optionToggleLabel": "State:",
+                "optionIgnoreStaffName": "Umschalten Mitglieder ignorieren",
+                "optionIgnoreStaffDesc": "Umschalten Mitglieder ignorieren On/Off",
+                "optionIgnoreStaffLabel": "Mitglieder ignorieren:",
+                "optionIgnoreModName": "Umschalten Mods ingorieren",
+                "optionIgnoreModDesc": "Umschalten moderator ignorieren On/Off",
+                "optionIgnoreModLabel": "Mods ignorieren:",
+                "optionIgnoreChannelName": "Kanäle ignorieren einstellen",
+                "optionIgnoreChannelDesc": "Ignorierkanäle hinzufügen/entfernen",
+                "optionIgnoreChannelLabel": "Ingorierte Kanäle:",
+                "optionToggleWarnsName": "Warnungen Umschalten",
+                "optionToggleWarnsDesc": "Verwarnungsstrafe umschalten",
+                "optionToggleWarnsLabel": "Warnung:",
+                "optionToggleDeleteName": "Schalten Sie Nachricht löschen um",
+                "optionToggleDeleteDesc": "Bestrafung zum Löschen von Nachrichten umschalten",
+                "optionToggleDeleteLabel": "Gelöschte Nachrichten:",
+                "optionMuteDurationName": "Mute Dauer",
+                "optionMuteDurationDesc": "Stellen Sie die Stummschaltdauer ein",
+                "optionMuteDurationLabel": "Mute Dauer:",
+                "optionAddUrlName": "Zulässige URL hinzufügen",
+                "optionAddUrlLabel": "Erlaubte Links:",
+                "optionNoChannels": "`Keine Kanäle`",
+                "optionNoUrl": "`Keine Url(s)`",
+                "optionAddUrlDesc": "Neue URL zur Ignorierliste hinzufügen",
+                "optionDelUrlName": "Zulässige URL löschen",
+                "optionDelUrlDesc": "Entfernen Sie eine URL aus der Ignorieren-Liste",
+                "optionMessageName": "Erlaubte Nachrichten festlegen",
+                "optionMessageDesc": "Legen Sie die zulässige Anzahl von Nachrichten fest",
+                "optionMessageLabel": "Erlaubte Nachrichten:",
+                "optionCooldownName": "Cooldown einstellen",
+                "optionCooldownDesc": "Legen Sie die Anzahl der Cooldown-Sekunden fest",
+                "optionCooldownLabel": "Cooldown:",
+                "optionSeconds": "Sekunden",
+                "optionPercentageName": "Prozentsatz festlegen",
+                "optionPercentageDesc": "Stellen Sie den zulässigen Prozentsatz ein",
+                "optionPercentageLabel": "Zulässiger Prozentsatz:",
+                "optionAmountName": "Bestimme die Menge",
+                "optionAmountDesc": "Stellen Sie die zulässige Menge ein",
+                "optionAmountLabel": "Erlaubte Menge:",
+                "optionStaffPingName": "StaffPing umschalten",
+                "optionStaffPingDesc": "StaffPing zulassen/verbieten",
+                "optionStaffPingLabel": "Staff Pinging:",
+                "optionModPingName": "ModPing umschalten",
+                "optionModPingDesc": "ModPing zulassen/verbieten",
+                "optionModPingLabel": "Mod Pinging:",
+                "optionMaxRolesName": "Rollenbetrag festlegen",
+                "optionMaxRolesDesc": "Legen Sie die zulässige Anzahl von Rollenerwähnungen fest",
+                "optionMaxRolesLabel": "Maximale Rollenanzahl:",
+                "optionMaxUsersName": "Benutzeranzahl festlegen",
+                "optionMaxUsersDesc": "Legen Sie die Anzahl der zulässigen Benutzererwähnungen fest",
+                "optionMaxUsersLabel": "Maximale Benutzeranzahl:",
+                "removedChannel": "Erfolgreich entfernt {channel}.",
+                "addedChannel": "Erfolgreich hinzugefügt{channel}.",
+                "mentionChannel": "Sie müssen einen Kanal angeben.",
+                "validNumber": "Sie müssen eine gültige Nummer angeben.",
+                "returnFooter": "Geben Sie \"return\" ein, um zum Hauptmenü zurückzukehren.",
+                "optionSucess": "Sie haben erfolgreich eingestellt",
+                "optionSet": "You have successfully set {category} {option} to {value}."
+            }
+        }
+    }
+}
